@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta httcontainerp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>password generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="showcase">
+            <input type="text" id="output">
+            <div class="btn-container">
+                <button id="generate"><i class="fa-solid fa-shuffle" onclick="generator()"></i></button>
+                <button><i class="fa-regular fa-copy" onclick="copyText()"></i></button>
+            </div>
+        </div>
+        <input type="range" id="output-length" min="8" max="16" value="8" oninput="generator()">
+        <button class="output-length-btn">8</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

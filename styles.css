@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+body {
+    background: blue;
+}
+
+.container {
+    background-color: #1c1e21;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    min-width: 450px;
+    width: 50%;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.showcase #output {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #e2e2e2;
+    color: #e2e2e2;
+    width: 70%;
+    outline: none;
+}
+
+.showcase .btn-container {
+    display: flex;
+}
+
+
+.showcase .btn-container button{
+    color: #e2e2e2;
+    background: transparent;
+    padding: 10px;
+    border: none;
+}
+
+.showcase .btn-container button:hover {
+    cursor: pointer;
+    background-color: #e2e2e2;
+    color: #1c1e21;
+}
+
+.showcase .btn-container button i{
+    font-size: 30px;
+    float: right;
+}
+
+#output-length {
+    appearance: none;
+    width: 70%;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ccc, #ccc) no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+}
+
+.output-length-btn{
+    background: #e2e2e2;
+    color: #1c1c1c;
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    float: right;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+}
